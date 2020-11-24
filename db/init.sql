@@ -1,14 +1,14 @@
 CREATE DATABASE employeeData;
 use employeeData;
 
-CREATE TABLE IF NOT EXISTS biostats (
+CREATE TABLE IF NOT EXISTS employeeInfo (
     `Name` VARCHAR(4) CHARACTER SET utf8,
     `Sex` VARCHAR(10) CHARACTER SET utf8,
     `Age` INT,
     `Height_in` INT,
     `Weight_lbs` INT
 );
-INSERT INTO biostats VALUES
+INSERT INTO employeeInfo VALUES
     ('Alex','       "M"',   41,       74,      170),
     ('Bert','       "M"',   42,       68,      166),
     ('Carl','       "M"',   32,       70,      155),
