@@ -2,13 +2,15 @@ CREATE DATABASE employeeData;
 use employeeData;
 
 CREATE TABLE IF NOT EXISTS employeeInfo (
+    `id` int AUTO_INCREMENT,
     `Name` VARCHAR(4) CHARACTER SET utf8,
     `Sex` VARCHAR(10) CHARACTER SET utf8,
     `Age` INT,
     `Height_in` INT,
-    `Weight_lbs` INT
+    `Weight_lbs` INT,
+    PRIMARY KEY (`id`)
 );
-INSERT INTO employeeInfo VALUES
+INSERT INTO employeeInfo (Name, Sex, Age, Height_in, Weight_lbs) VALUES
     ('Alex','       "M"',   41,       74,      170),
     ('Bert','       "M"',   42,       68,      166),
     ('Carl','       "M"',   32,       70,      155),
