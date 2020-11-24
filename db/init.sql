@@ -3,7 +3,7 @@ use employeeData;
 
 CREATE TABLE IF NOT EXISTS employeeInfo (
     `id` int AUTO_INCREMENT,
-    `Name` VARCHAR(4) CHARACTER SET utf8,
+    `Name` VARCHAR(25) CHARACTER SET utf8,
     `Sex` VARCHAR(10) CHARACTER SET utf8,
     `Age` INT,
     `Height_in` INT,
